@@ -1,0 +1,46 @@
+{
+  "name": "vite-static-starter",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A modern static site starter repository powered by Vite, featuring smooth animations with GSAP and Lenis, built-in image optimization with lazy loading, and a collection of reusable JavaScript utility functions to streamline development.",
+  "author": "Amit Chauhan",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:unminified": "vite build --mode unminified",
+    "preview": "vite preview",
+    "format": "prettier --write \"**/*.{html,js,scss,json}\"",
+    "lint": "eslint \"**/*.js\"",
+    "prepare": "husky",
+    "test": "echo \"No tests yet\""
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix",
+    "*.{html,scss,json,js}": "prettier --write"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "glob": "^13.0.6",
+    "globals": "^17.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "postcss": "^8.5.10",
+    "prettier": "^3.8.3",
+    "sass": "^1.99.0",
+    "sharp": "^0.34.5",
+    "svgo": "^4.0.1",
+    "vite": "^8.0.9",
+    "vite-plugin-checker": "^0.13.0",
+    "vite-plugin-html-include": "^1.5.2",
+    "vite-plugin-image-optimizer": "^2.0.3"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.23"
+  }
+}

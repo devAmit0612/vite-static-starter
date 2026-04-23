@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <include
+        file="src/parts/_head.html"
+        $title="Vite static starter"
+        $description="A modern static site starter repository powered by Vite, featuring smooth animations with GSAP and Lenis, built-in image optimization with lazy loading, and a collection of reusable JavaScript utility functions to streamline development."
+        $keywords="Vite, static site, starter, GSAP, Lenis, image optimization, lazy loading, JavaScript utilities"
+    ></include>
+    <body>
+        <include file="src/components/_header.html"></include>
+
+        <main
+            style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+                max-width: 80rem;
+                margin: 0 auto;
+                padding: 8rem 0;
+            "
+        >
+            <img
+                src="assets/images/dmytro-koplyk-ueMME9Eao18-unsplash.jpg"
+                data-image-responsive
+                loading="lazy"
+                width="720"
+                height="576"
+                alt=""
+            />
+            <img
+                src="assets/images/skyler-ewing-T4tFQFrfO-0-unsplash.jpg"
+                data-image-responsive
+                loading="lazy"
+                width="1080"
+                height="864"
+                alt=""
+            />
+            <img
+                src="assets/images/aaron-burden-0ELcDlSjOgU-unsplash.jpg"
+                data-image-responsive
+                loading="lazy"
+                width="540"
+                height="719"
+                alt=""
+            />
+            <img
+                src="assets/images/anthony-robinson-ofc0E7YqnRY-unsplash.jpg"
+                data-image-responsive
+                loading="lazy"
+                width="1080"
+                height="689"
+                alt=""
+            />
+        </main>
+
+        <include file="src/components/_footer.html"></include>
+        <script type="module" src="/assets/js/main.js"></script>
+    </body>
+</html>

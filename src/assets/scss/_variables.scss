@@ -1,0 +1,14 @@
+$white: #ffffff;
+$light: #e5e5e5;
+$dark: #212529;
+$black: #000000;
+$pink: #e83e8c;
+
+$heading-font-sizes: (
+  h1: clamp(2rem, 3.5vw + 1rem, 4rem),
+  h2: clamp(1.75rem, 2.5vw + 1rem, 3rem),
+  h3: clamp(1.5rem, 1.5vw + 1rem, 2rem),
+  h4: clamp(1.25rem, 1vw + 1rem, 1.5rem),
+  h5: 1.125rem,
+  h6: 1rem,
+);
